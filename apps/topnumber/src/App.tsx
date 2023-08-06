@@ -5,7 +5,7 @@ import "./App.css";
 import { Shell } from "ui";
 
 // Components
-import { TopNumber } from "./components/TopNumber";
+import { TopNumber } from "games";
 
 function App() {
   return (

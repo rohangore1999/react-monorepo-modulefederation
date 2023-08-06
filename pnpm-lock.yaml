@@ -53,6 +53,9 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.7
         version: 18.2.7
+      games:
+        specifier: workspace:*
+        version: link:../../packages/games
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -108,6 +111,9 @@ importers:
       craco:
         specifier: ^0.0.3
         version: 0.0.3(react-scripts@5.0.1)
+      games:
+        specifier: workspace:*
+        version: link:../../packages/games
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -160,6 +166,9 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.7
         version: 18.2.7
+      games:
+        specifier: workspace:*
+        version: link:../../packages/games
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -197,6 +206,43 @@ importers:
       eslint-plugin-react:
         specifier: 7.28.0
         version: 7.28.0(eslint@7.32.0)
+
+  packages/games:
+    dependencies:
+      '@mantine/core':
+        specifier: ^6.0.17
+        version: 6.0.17(@emotion/react@11.11.1)(@mantine/hooks@6.0.17)(@types/react@17.0.37)(react-dom@18.2.0)(react@18.2.0)
+      '@mantine/hooks':
+        specifier: ^6.0.17
+        version: 6.0.17(react@18.2.0)
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
+      ui:
+        specifier: workspace:*
+        version: link:../ui
+    devDependencies:
+      '@types/react':
+        specifier: ^17.0.37
+        version: 17.0.37
+      '@types/react-dom':
+        specifier: ^17.0.11
+        version: 17.0.11
+      eslint:
+        specifier: ^7.32.0
+        version: 7.32.0
+      eslint-config-custom:
+        specifier: workspace:*
+        version: link:../eslint-config-custom
+      tsconfig:
+        specifier: workspace:*
+        version: link:../tsconfig
+      tsup:
+        specifier: ^7.2.0
+        version: 7.2.0(typescript@4.9.5)
+      typescript:
+        specifier: ^4.5.2
+        version: 4.9.5
 
   packages/tsconfig: {}
 
@@ -1874,7 +1920,6 @@ packages:
     cpu: [arm64]
     os: [android]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/android-arm@0.18.17:
@@ -1883,7 +1928,6 @@ packages:
     cpu: [arm]
     os: [android]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/android-x64@0.18.17:
@@ -1892,7 +1936,6 @@ packages:
     cpu: [x64]
     os: [android]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/darwin-arm64@0.18.17:
@@ -1901,7 +1944,6 @@ packages:
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/darwin-x64@0.18.17:
@@ -1910,7 +1952,6 @@ packages:
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/freebsd-arm64@0.18.17:
@@ -1919,7 +1960,6 @@ packages:
     cpu: [arm64]
     os: [freebsd]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/freebsd-x64@0.18.17:
@@ -1928,7 +1968,6 @@ packages:
     cpu: [x64]
     os: [freebsd]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/linux-arm64@0.18.17:
@@ -1937,7 +1976,6 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/linux-arm@0.18.17:
@@ -1946,7 +1984,6 @@ packages:
     cpu: [arm]
     os: [linux]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/linux-ia32@0.18.17:
@@ -1955,7 +1992,6 @@ packages:
     cpu: [ia32]
     os: [linux]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/linux-loong64@0.18.17:
@@ -1964,7 +2000,6 @@ packages:
     cpu: [loong64]
     os: [linux]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/linux-mips64el@0.18.17:
@@ -1973,7 +2008,6 @@ packages:
     cpu: [mips64el]
     os: [linux]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/linux-ppc64@0.18.17:
@@ -1982,7 +2016,6 @@ packages:
     cpu: [ppc64]
     os: [linux]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/linux-riscv64@0.18.17:
@@ -1991,7 +2024,6 @@ packages:
     cpu: [riscv64]
     os: [linux]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/linux-s390x@0.18.17:
@@ -2000,7 +2032,6 @@ packages:
     cpu: [s390x]
     os: [linux]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/linux-x64@0.18.17:
@@ -2009,7 +2040,6 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/netbsd-x64@0.18.17:
@@ -2018,7 +2048,6 @@ packages:
     cpu: [x64]
     os: [netbsd]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/openbsd-x64@0.18.17:
@@ -2027,7 +2056,6 @@ packages:
     cpu: [x64]
     os: [openbsd]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/sunos-x64@0.18.17:
@@ -2036,7 +2064,6 @@ packages:
     cpu: [x64]
     os: [sunos]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/win32-arm64@0.18.17:
@@ -2045,7 +2072,6 @@ packages:
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/win32-ia32@0.18.17:
@@ -2054,7 +2080,6 @@ packages:
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@esbuild/win32-x64@0.18.17:
@@ -2063,7 +2088,6 @@ packages:
     cpu: [x64]
     os: [win32]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@eslint-community/eslint-utils@4.4.0(eslint@8.46.0):
@@ -4559,7 +4583,6 @@ packages:
     dependencies:
       esbuild: 0.18.17
       load-tsconfig: 0.2.5
-    dev: false
 
   /bytes@3.0.0:
     resolution: {integrity: sha512-pMhOfFDPiv9t5jjIXkHosWmkSyQbvsgEVNkz0ERHbuLh2T/7j4Mqqpz523Fe8MVY89KC6Sh/QfS2sM+SjgFDcw==}
@@ -4572,7 +4595,6 @@ packages:
   /cac@6.7.14:
     resolution: {integrity: sha512-b6Ilus+c3RrdDk+JhLKUAQfzzgLEPy6wcXqS7f/xe1EETvsDP6GORG7SFuOs6cID5YkqchW/LXZbX5bc8j7ZcQ==}
     engines: {node: '>=8'}
-    dev: false
 
   /cacache@12.0.4:
     resolution: {integrity: sha512-a0tMB40oefvuInr4Cwb3GerbL9xTj1D5yg0T5xrjGCGyfvbxseIXX7BAO/u/hIXdafzOI5JC3wDwHyf24buOAQ==}
@@ -5922,7 +5944,6 @@ packages:
       '@esbuild/win32-arm64': 0.18.17
       '@esbuild/win32-ia32': 0.18.17
       '@esbuild/win32-x64': 0.18.17
-    dev: false
 
   /escalade@3.1.1:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
@@ -8575,7 +8596,6 @@ packages:
   /joycon@3.1.1:
     resolution: {integrity: sha512-34wB/Y7MW7bzjKRjUKTa46I2Z7eV62Rkhva+KkopW7Qvv/OSWBqvkSY7vusOPrNuZcUG3tApvdVgNB8POj3SPw==}
     engines: {node: '>=10'}
-    dev: false
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -8757,7 +8777,6 @@ packages:
   /load-tsconfig@0.2.5:
     resolution: {integrity: sha512-IXO6OCs9yg8tMKzfPZ1YmheJbZCiEsnBdcB03l0OcfK9prKnJb96siuHCr5Fl37/yo9DnKU+TLpxzTUspw9shg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    dev: false
 
   /loader-runner@2.4.0:
     resolution: {integrity: sha512-Jsmr89RcXGIwivFY21FcRrisYZfvLMTWx5kOLc+JTxtpBOG6xML0vzbc6SEQG2FO9/4Fc3wW4LVcB5DmGflaRw==}
@@ -11215,7 +11234,6 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
-    dev: false
 
   /run-applescript@5.0.0:
     resolution: {integrity: sha512-XcT5rBksx1QdIhlFOCtgZkB99ZEouFZ1E2Kc2LHqNW13U3/74YGdkQRmThTwxy4QIyookibDKYZOPqX//6BlAg==}
@@ -12254,7 +12272,6 @@ packages:
   /tree-kill@1.2.2:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
     hasBin: true
-    dev: false
 
   /tryer@1.0.1:
     resolution: {integrity: sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA==}
@@ -12341,7 +12358,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - ts-node
-    dev: false
 
   /tsutils@3.21.0(typescript@4.9.5):
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}

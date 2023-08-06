@@ -2,7 +2,7 @@ import React from "react";
 import { Shell } from "ui";
 
 // Components
-import { CardPicker } from "./components/CardPicker";
+import { CardPicker } from "games";
 
 function App() {
   return (
